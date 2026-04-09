@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+</<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -7,55 +7,49 @@
 <style>
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #0f172a;
-    color: white;
+    font-family: Arial, sans-serif;
+    background: #0a192f; /* biru tua */
+    color: #333;
 }
 
 /* CONTAINER FULL */
 .container {
+    width: 100%;
     min-height: 100vh;
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-/* CARD */
+/* CARD UTAMA */
 .card {
-    width: 90%;
-    max-width: 400px;
-    padding: 3px;
-    border-radius: 20px;
-    background: linear-gradient(45deg, #00ff88, #00c6ff);
-}
-
-/* ISI */
-.card-content {
-    background: #020617;
-    border-radius: 18px;
-    padding: 30px;
-    text-align: center;
+    width: 100%;
+    background: #ffffff; /* putih */
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* FOTO */
 .profile-img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 3px solid #00ff88;
+    border: 3px solid #0a192f;
+    display: block;
+    margin: auto;
     object-fit: cover;
-    margin-bottom: 10px;
 }
 
-/* TEXT */
+/* JUDUL */
 h2 {
-    margin: 10px 0;
+    text-align: center;
+    margin: 15px 0;
+    color: #0a192f;
 }
 
+/* INFO */
 .info {
-    text-align: left;
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 15px;
 }
 
@@ -64,36 +58,30 @@ h2 {
 }
 
 /* SOSIAL */
-.social {
-    margin-top: 20px;
-}
-
 .social a {
     display: block;
-    margin: 8px auto;
-    width: 80%;
-    padding: 10px;
-    border-radius: 25px;
     text-decoration: none;
-    background: linear-gradient(45deg, #00ff88, #00c6ff);
-    color: black;
-    font-weight: bold;
-    transition: 0.3s;
+    background: #0a192f; /* biru tua */
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: center;
 }
 
-.social a:hover {
-    transform: scale(1.05);
-}
-
-/* SECTION TAMBAHAN BIAR PANJANG */
+/* SECTION */
 .section {
-    margin-top: 30px;
-    width: 90%;
-    max-width: 400px;
-    background: #020617;
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid #00ff88;
+    width: 100%;
+    background: #e5e7eb; /* abu-abu */
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.section h3 {
+    margin-top: 0;
+    color: #0a192f;
 }
 </style>
 </head>
@@ -102,37 +90,33 @@ h2 {
 
 <div class="container">
 
-    <!-- CARD UTAMA -->
+    <!-- CARD -->
     <div class="card">
-        <div class="card-content">
 
-            <!-- FOTO -->
-            <img src="foto-kamu.jpg" class="profile-img">
+        <img src="foto-kamu.jpg" class="profile-img">
 
-            <!-- NAMA -->
-            <h2>NAYLA ZAHROTUL</h2>
+        <h2>NAYLA ZAHROTUL</h2>
 
-            <!-- DATA -->
-            <div class="info">
-                <p><b>Hobi:</b> Olahraga</p>
-                <p><b>Cita-cita:</b> Dokter</p>
-            </div>
-
-            <!-- SOSIAL -->
-            <div class="social">
-                <a href="#">TikTok: 222.888</a>
-                <a href="#">Instagram: nayranaaaaa_</a>
-            </div>
-
+        <div class="info">
+            <p><b>Kelas:</b> 12 TJKT 1</p>
+            <p><b>Hobi:</b> Olahraga</p>
+            <p><b>Cita-cita:</b> Dokter</p>
         </div>
+
+        <div class="social">
+            <a href="#">TikTok: 222.888</a>
+            <a href="#">Instagram: nayranaaaaa_</a>
+        </div>
+
     </div>
 
-    <!-- SECTION TAMBAHAN (BIAR PANJANG) -->
+    <!-- TENTANG -->
     <div class="section">
         <h3>Tentang Saya</h3>
         <p>Saya adalah pelajar yang memiliki semangat tinggi dalam belajar dan bercita-cita menjadi dokter. Saya suka berolahraga untuk menjaga kesehatan tubuh.</p>
     </div>
 
+    <!-- MOTIVASI -->
     <div class="section">
         <h3>Motivasi</h3>
         <p>Terus berusaha, jangan menyerah, dan selalu percaya bahwa masa depan bisa diraih dengan kerja keras.</p>
