@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Profil Saya</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CARD */
+.card {
+    width: 340px;
+    padding: 3px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #00f5ff, #7c3aed, #ff00cc);
+    animation: borderGlow 5s linear infinite;
+}
+
+/* ANIMASI BORDER */
+@keyframes borderGlow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+/* ISI CARD */
+.card-content {
+    background: #111827;
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
+
+/* FOTO */
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid #00f5ff;
+    object-fit: cover;
+}
+
+/* NAMA */
+h2 {
+    margin: 10px 0 5px;
+}
+
+/* DATA */
+.info {
+    text-align: left;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.info p {
+    margin: 6px 0;
+}
+
+/* SOSIAL MEDIA */
+.social a {
+    display: inline-block;
+    margin: 8px 5px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    background: linear-gradient(45deg, #00f5ff, #7c3aed);
+    color: white;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    transform: scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <div class="card-content">
+
+        <!-- FOTO -->
+        <img src="foto-kamu.jpg" class="profile-img">
+
+        <!-- NAMA -->
+        <h2>Nama Lengkap Kamu</h2>
+
+        <!-- DATA DIRI -->
+        <div class="info">
+            <p><b>Kelas:</b> XI RPL</p>
+            <p><b>Sekolah:</b> SMK Kamu</p>
+            <p><b>Hobi:</b> Coding, Gaming</p>
+            <p><b>Cita-cita:</b> Software Developer</p>
+        </div>
+
+        <!-- SOSIAL MEDIA -->
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+            <a href="#">GitHub</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+  </html>
