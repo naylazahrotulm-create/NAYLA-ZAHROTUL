@@ -2,116 +2,143 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Profil Saya</title>
+<title>Profil Nayla</title>
 
 <style>
 body {
     margin: 0;
-    padding: 0;
     font-family: 'Poppins', sans-serif;
     background: #0f172a;
+    color: white;
+}
+
+/* CONTAINER FULL */
+.container {
+    min-height: 100vh;
+    padding: 40px 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
 }
 
 /* CARD */
 .card {
-    width: 340px;
+    width: 90%;
+    max-width: 400px;
     padding: 3px;
     border-radius: 20px;
-    background: linear-gradient(45deg, #00f5ff, #7c3aed, #ff00cc);
-    animation: borderGlow 5s linear infinite;
+    background: linear-gradient(45deg, #00ff88, #00c6ff);
 }
 
-/* ANIMASI BORDER */
-@keyframes borderGlow {
-    0% { filter: hue-rotate(0deg); }
-    100% { filter: hue-rotate(360deg); }
-}
-
-/* ISI CARD */
+/* ISI */
 .card-content {
-    background: #111827;
+    background: #020617;
     border-radius: 18px;
-    padding: 25px;
+    padding: 30px;
     text-align: center;
-    color: white;
 }
 
 /* FOTO */
 .profile-img {
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    border: 3px solid #00f5ff;
+    border: 3px solid #00ff88;
     object-fit: cover;
+    margin-bottom: 10px;
 }
 
-/* NAMA */
+/* TEXT */
 h2 {
-    margin: 10px 0 5px;
+    margin: 10px 0;
 }
 
-/* DATA */
 .info {
     text-align: left;
-    margin-top: 15px;
-    font-size: 14px;
+    margin-top: 20px;
+    font-size: 15px;
 }
 
 .info p {
-    margin: 6px 0;
+    margin: 8px 0;
 }
 
-/* SOSIAL MEDIA */
+/* SOSIAL */
+.social {
+    margin-top: 20px;
+}
+
 .social a {
-    display: inline-block;
-    margin: 8px 5px;
-    padding: 8px 15px;
-    border-radius: 20px;
+    display: block;
+    margin: 8px auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 25px;
     text-decoration: none;
-    background: linear-gradient(45deg, #00f5ff, #7c3aed);
-    color: white;
-    font-size: 13px;
+    background: linear-gradient(45deg, #00ff88, #00c6ff);
+    color: black;
+    font-weight: bold;
     transition: 0.3s;
 }
 
 .social a:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+/* SECTION TAMBAHAN BIAR PANJANG */
+.section {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 400px;
+    background: #020617;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #00ff88;
 }
 </style>
 </head>
 
 <body>
 
-<div class="card">
-    <div class="card-content">
+<div class="container">
 
-        <!-- FOTO -->
-        <img src="foto-kamu.jpg" class="profile-img">
+    <!-- CARD UTAMA -->
+    <div class="card">
+        <div class="card-content">
 
-        <!-- NAMA -->
-        <h2>Nama Lengkap Kamu</h2>
+            <!-- FOTO -->
+            <img src="foto-kamu.jpg" class="profile-img">
 
-        <!-- DATA DIRI -->
-        <div class="info">
-            <p><b>Kelas:</b> XI RPL</p>
-            <p><b>Sekolah:</b> SMK Kamu</p>
-            <p><b>Hobi:</b> Coding, Gaming</p>
-            <p><b>Cita-cita:</b> Software Developer</p>
+            <!-- NAMA -->
+            <h2>NAYLA ZAHROTUL</h2>
+
+            <!-- DATA -->
+            <div class="info">
+                <p><b>Hobi:</b> Olahraga</p>
+                <p><b>Cita-cita:</b> Dokter</p>
+            </div>
+
+            <!-- SOSIAL -->
+            <div class="social">
+                <a href="#">TikTok: 222.888</a>
+                <a href="#">Instagram: nayranaaaaa_</a>
+            </div>
+
         </div>
-
-        <!-- SOSIAL MEDIA -->
-        <div class="social">
-            <a href="#">Instagram</a>
-            <a href="#">TikTok</a>
-            <a href="#">GitHub</a>
-        </div>
-
     </div>
+
+    <!-- SECTION TAMBAHAN (BIAR PANJANG) -->
+    <div class="section">
+        <h3>Tentang Saya</h3>
+        <p>Saya adalah pelajar yang memiliki semangat tinggi dalam belajar dan bercita-cita menjadi dokter. Saya suka berolahraga untuk menjaga kesehatan tubuh.</p>
+    </div>
+
+    <div class="section">
+        <h3>Motivasi</h3>
+        <p>Terus berusaha, jangan menyerah, dan selalu percaya bahwa masa depan bisa diraih dengan kerja keras.</p>
+    </div>
+
 </div>
 
 </body>
-  </html>
+</html>
